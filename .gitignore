@@ -1,2 +1,16 @@
-node_modules
+# Зависимости (самая тяжелая папка)
+node_modules/
+
+# Секретные данные
 .env
+
+# Логи ошибок
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Системные файлы (особенно если ты на Mac)
+.DS_Store
+
+# Папка для тестов или логов (если есть)
+logs/
