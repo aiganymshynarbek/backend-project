@@ -7,7 +7,7 @@ exports.addReview = async (req, res) => {
       rating,
       comment,
       resource: resourceId,
-      user: req.user.id // Кто оставил отзыв
+      user: req.user.id 
     });
     await review.save();
     res.json(review);

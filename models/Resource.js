@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const ResourceSchema = new mongoose.Schema({
-  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }, // Связь с пользователем
+  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
   title: { type: String, required: true },
   link: { type: String, required: true },
-  subject: { type: mongoose.Schema.Types.ObjectId, ref: 'Subject' }, // Связь с предметом
+  subject: { type: mongoose.Schema.Types.ObjectId, ref: 'Subject' }, 
   description: { type: String }
 });
 

@@ -8,7 +8,7 @@ exports.createResource = async (req, res) => {
       title,
       link,
       description,
-      user: req.user.id // ID берется из токена автоматически!
+      user: req.user.id 
     });
     const resource = await newResource.save();
     res.json(resource);
